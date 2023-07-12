@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
   spec.swift_versions = '5.0'
   spec.frameworks = 'Foundation'
   spec.vendored_frameworks = 'GoEasySwift.framework'
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 end
