@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name GoEasySwift
+import Foundation
+import Swift
+import _Concurrency
+@_hasMissingDesignatedInitializers public class PubSubMessage {
+  public var time: Swift.Int64
+  public var channel: Swift.String
+  public var content: Swift.String
+  @objc deinit
+}
+public class GoEasyEventListener {
+  public init()
+  public var onSuccess: ((GoEasySwift.GResult) -> Swift.Void)?
+  public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class SubscribeEventListener : GoEasySwift.GoEasyEventListener {
+  public var onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)?
+  override public init()
+  @objc deinit
+}
+public class ConnectOptions {
+  public var id: Swift.String?
+  public var data: [Swift.String : Swift.String]?
+  public var otp: Swift.String?
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GPubSub {
+  public static func publish(channel: Swift.String, message: Swift.String, publishEventListener: GoEasySwift.GoEasyEventListener)
+  public static func subscribe(channel: Swift.String, subscribeEventListener: GoEasySwift.SubscribeEventListener)
+  public static func unsubscribe(channel: Swift.String, unsubscribeEventListener: GoEasySwift.GoEasyEventListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GoEasy {
+  public static func initGoEasy(host: Swift.String, appkey: Swift.String)
+  public static func connect(connectEventListener: GoEasySwift.ConnectEventListener)
+  public static func connect(options: GoEasySwift.ConnectOptions, connectEventListener: GoEasySwift.ConnectEventListener)
+  public static func disconnect(disconnectEventListener: GoEasySwift.GoEasyEventListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GResult {
+  public var code: Swift.Int
+  public var data: Any
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ConnectEventListener : GoEasySwift.GoEasyEventListener {
+  public var onProgress: ((Swift.Int32) -> Swift.Void)?
+  override public init()
+  @objc deinit
+}
