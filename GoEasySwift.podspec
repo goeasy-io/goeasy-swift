@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
   spec.name         = "GoEasySwift"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "GoEasy SDK for swift"
   spec.description  = "GoEasy SDK for swift"
-  spec.homepage     = "https://github.com/goeasy-io/goeasy-swift"
+  spec.homepage     = "https://github.com/goeasy-io/goeasy-swift.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "GoEasy Team" => "support@goeasy.io" }
-  spec.source       = { :git => "https://github.com/goeasy-io/goeasy-swift", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/goeasy-io/goeasy-swift.git", :tag => "#{spec.version}" }
   spec.libraries    = 'c++'
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
