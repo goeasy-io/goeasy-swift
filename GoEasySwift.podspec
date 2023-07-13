@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "GoEasySwift"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "GoEasy SDK for swift"
   spec.description  = "GoEasy SDK for swift"
   spec.homepage     = "https://github.com/goeasy-io/goeasy-swift.git"
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.libraries    = 'c++'
   spec.ios.deployment_target = '11.0'
   spec.platform     = :ios, "11.0"
-  spec.swift_versions = '5.0'
+  spec.swift_version = '5'
   spec.frameworks = 'Foundation'
   spec.vendored_frameworks = 'GoEasySwift.framework'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
