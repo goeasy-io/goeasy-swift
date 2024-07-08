@@ -1,0 +1,2300 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PubSubMessage",
+        "printedName": "PubSubMessage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "time",
+            "printedName": "time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift13PubSubMessageC4times5Int64Vvp",
+            "mangledName": "$s11GoEasySwift13PubSubMessageC4times5Int64Vvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC4times5Int64Vvg",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC4times5Int64Vvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC4times5Int64Vvs",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC4times5Int64Vvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC4times5Int64VvM",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC4times5Int64VvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "channel",
+            "printedName": "channel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift13PubSubMessageC7channelSSvp",
+            "mangledName": "$s11GoEasySwift13PubSubMessageC7channelSSvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7channelSSvg",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7channelSSvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7channelSSvs",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7channelSSvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7channelSSvM",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7channelSSvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "content",
+            "printedName": "content",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift13PubSubMessageC7contentSSvp",
+            "mangledName": "$s11GoEasySwift13PubSubMessageC7contentSSvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7contentSSvg",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7contentSSvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7contentSSvs",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7contentSSvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift13PubSubMessageC7contentSSvM",
+                "mangledName": "$s11GoEasySwift13PubSubMessageC7contentSSvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift13PubSubMessageC",
+        "mangledName": "$s11GoEasySwift13PubSubMessageC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoEasyEventListener",
+        "printedName": "GoEasyEventListener",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GoEasyEventListener",
+                "printedName": "GoEasySwift.GoEasyEventListener",
+                "usr": "s:11GoEasySwift0aB13EventListenerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift0aB13EventListenerCACycfc",
+            "mangledName": "$s11GoEasySwift0aB13EventListenerCACycfc",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "onSuccess",
+            "printedName": "onSuccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((GoEasySwift.GResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoEasySwift.GResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GResult",
+                        "printedName": "GoEasySwift.GResult",
+                        "usr": "s:11GoEasySwift7GResultC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvp",
+            "mangledName": "$s11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.GResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.GResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GResult",
+                            "printedName": "GoEasySwift.GResult",
+                            "usr": "s:11GoEasySwift7GResultC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvg",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.GResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.GResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GResult",
+                            "printedName": "GoEasySwift.GResult",
+                            "usr": "s:11GoEasySwift7GResultC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvs",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvM",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC9onSuccessyAA7GResultCcSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onFailed",
+            "printedName": "onFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((GoEasySwift.GResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoEasySwift.GResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GResult",
+                        "printedName": "GoEasySwift.GResult",
+                        "usr": "s:11GoEasySwift7GResultC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvp",
+            "mangledName": "$s11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.GResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.GResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GResult",
+                            "printedName": "GoEasySwift.GResult",
+                            "usr": "s:11GoEasySwift7GResultC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvg",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.GResult) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.GResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GResult",
+                            "printedName": "GoEasySwift.GResult",
+                            "usr": "s:11GoEasySwift7GResultC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvs",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvM",
+                "mangledName": "$s11GoEasySwift0aB13EventListenerC8onFailedyAA7GResultCcSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift0aB13EventListenerC",
+        "mangledName": "$s11GoEasySwift0aB13EventListenerC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SubscribeEventListener",
+        "printedName": "SubscribeEventListener",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "onMessage",
+            "printedName": "onMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((GoEasySwift.PubSubMessage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GoEasySwift.PubSubMessage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PubSubMessage",
+                        "printedName": "GoEasySwift.PubSubMessage",
+                        "usr": "s:11GoEasySwift13PubSubMessageC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvp",
+            "mangledName": "$s11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.PubSubMessage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.PubSubMessage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PubSubMessage",
+                            "printedName": "GoEasySwift.PubSubMessage",
+                            "usr": "s:11GoEasySwift13PubSubMessageC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvg",
+                "mangledName": "$s11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((GoEasySwift.PubSubMessage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(GoEasySwift.PubSubMessage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PubSubMessage",
+                            "printedName": "GoEasySwift.PubSubMessage",
+                            "usr": "s:11GoEasySwift13PubSubMessageC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvs",
+                "mangledName": "$s11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvM",
+                "mangledName": "$s11GoEasySwift22SubscribeEventListenerC9onMessageyAA06PubSubH0CcSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscribeEventListener",
+                "printedName": "GoEasySwift.SubscribeEventListener",
+                "usr": "s:11GoEasySwift22SubscribeEventListenerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift22SubscribeEventListenerCACycfc",
+            "mangledName": "$s11GoEasySwift22SubscribeEventListenerCACycfc",
+            "moduleName": "GoEasySwift",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift22SubscribeEventListenerC",
+        "mangledName": "$s11GoEasySwift22SubscribeEventListenerC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:11GoEasySwift0aB13EventListenerC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GoEasySwift.GoEasyEventListener"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConnectOptions",
+        "printedName": "ConnectOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14ConnectOptionsC2idSSSgvp",
+            "mangledName": "$s11GoEasySwift14ConnectOptionsC2idSSSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC2idSSSgvg",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC2idSSSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC2idSSSgvs",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC2idSSSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC2idSSSgvM",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC2idSSSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvp",
+            "mangledName": "$s11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvg",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvs",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvM",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC4dataSDyS2SGSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otp",
+            "printedName": "otp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14ConnectOptionsC3otpSSSgvp",
+            "mangledName": "$s11GoEasySwift14ConnectOptionsC3otpSSSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC3otpSSSgvg",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC3otpSSSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC3otpSSSgvs",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC3otpSSSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14ConnectOptionsC3otpSSSgvM",
+                "mangledName": "$s11GoEasySwift14ConnectOptionsC3otpSSSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectOptions",
+                "printedName": "GoEasySwift.ConnectOptions",
+                "usr": "s:11GoEasySwift14ConnectOptionsC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift14ConnectOptionsCACycfc",
+            "mangledName": "$s11GoEasySwift14ConnectOptionsCACycfc",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift14ConnectOptionsC",
+        "mangledName": "$s11GoEasySwift14ConnectOptionsC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "Import",
+        "name": "goeasy",
+        "printedName": "goeasy",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GPubSub",
+        "printedName": "GPubSub",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "publish",
+            "printedName": "publish(options:publishEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PublishOptions",
+                "printedName": "GoEasySwift.PublishOptions",
+                "usr": "s:11GoEasySwift14PublishOptionsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GoEasyEventListener",
+                "printedName": "GoEasySwift.GoEasyEventListener",
+                "usr": "s:11GoEasySwift0aB13EventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift7GPubSubC7publish7options0F13EventListeneryAA14PublishOptionsC_AA0abhI0CtFZ",
+            "mangledName": "$s11GoEasySwift7GPubSubC7publish7options0F13EventListeneryAA14PublishOptionsC_AA0abhI0CtFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(channel:subscribeEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SubscribeEventListener",
+                "printedName": "GoEasySwift.SubscribeEventListener",
+                "usr": "s:11GoEasySwift22SubscribeEventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift7GPubSubC9subscribe7channel0F13EventListenerySS_AA09SubscribehI0CtFZ",
+            "mangledName": "$s11GoEasySwift7GPubSubC9subscribe7channel0F13EventListenerySS_AA09SubscribehI0CtFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(channel:unsubscribeEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GoEasyEventListener",
+                "printedName": "GoEasySwift.GoEasyEventListener",
+                "usr": "s:11GoEasySwift0aB13EventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift7GPubSubC11unsubscribe7channel0F13EventListenerySS_AA0abhI0CtFZ",
+            "mangledName": "$s11GoEasySwift7GPubSubC11unsubscribe7channel0F13EventListenerySS_AA0abhI0CtFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift7GPubSubC",
+        "mangledName": "$s11GoEasySwift7GPubSubC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PublishOptions",
+        "printedName": "PublishOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "channel",
+            "printedName": "channel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14PublishOptionsC7channelSSvp",
+            "mangledName": "$s11GoEasySwift14PublishOptionsC7channelSSvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7channelSSvg",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7channelSSvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7channelSSvs",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7channelSSvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7channelSSvM",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7channelSSvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14PublishOptionsC7messageSSvp",
+            "mangledName": "$s11GoEasySwift14PublishOptionsC7messageSSvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7messageSSvg",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7messageSSvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7messageSSvs",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7messageSSvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC7messageSSvM",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC7messageSSvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "qos",
+            "printedName": "qos",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int32?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift14PublishOptionsC3qoss5Int32VSgvp",
+            "mangledName": "$s11GoEasySwift14PublishOptionsC3qoss5Int32VSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC3qoss5Int32VSgvg",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC3qoss5Int32VSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int32?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC3qoss5Int32VSgvs",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC3qoss5Int32VSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift14PublishOptionsC3qoss5Int32VSgvM",
+                "mangledName": "$s11GoEasySwift14PublishOptionsC3qoss5Int32VSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channel:message:qos:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PublishOptions",
+                "printedName": "GoEasySwift.PublishOptions",
+                "usr": "s:11GoEasySwift14PublishOptionsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift14PublishOptionsC7channel7message3qosACSS_SSs5Int32Vtcfc",
+            "mangledName": "$s11GoEasySwift14PublishOptionsC7channel7message3qosACSS_SSs5Int32Vtcfc",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channel:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PublishOptions",
+                "printedName": "GoEasySwift.PublishOptions",
+                "usr": "s:11GoEasySwift14PublishOptionsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift14PublishOptionsC7channel7messageACSS_SStcfc",
+            "mangledName": "$s11GoEasySwift14PublishOptionsC7channel7messageACSS_SStcfc",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift14PublishOptionsC",
+        "mangledName": "$s11GoEasySwift14PublishOptionsC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "Import",
+        "name": "goeasy",
+        "printedName": "goeasy",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoEasy",
+        "printedName": "GoEasy",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initGoEasy",
+            "printedName": "initGoEasy(host:appkey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift0aB0C04initaB04host6appkeyySS_SStFZ",
+            "mangledName": "$s11GoEasySwift0aB0C04initaB04host6appkeyySS_SStFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(connectEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectEventListener",
+                "printedName": "GoEasySwift.ConnectEventListener",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift0aB0C7connect0D13EventListeneryAA07ConnecteF0C_tFZ",
+            "mangledName": "$s11GoEasySwift0aB0C7connect0D13EventListeneryAA07ConnecteF0C_tFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(options:connectEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectOptions",
+                "printedName": "GoEasySwift.ConnectOptions",
+                "usr": "s:11GoEasySwift14ConnectOptionsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectEventListener",
+                "printedName": "GoEasySwift.ConnectEventListener",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift0aB0C7connect7options0D13EventListeneryAA14ConnectOptionsC_AA0hfG0CtFZ",
+            "mangledName": "$s11GoEasySwift0aB0C7connect7options0D13EventListeneryAA14ConnectOptionsC_AA0hfG0CtFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(disconnectEventListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GoEasyEventListener",
+                "printedName": "GoEasySwift.GoEasyEventListener",
+                "usr": "s:11GoEasySwift0aB13EventListenerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11GoEasySwift0aB0C10disconnect0D13EventListeneryAA0abeF0C_tFZ",
+            "mangledName": "$s11GoEasySwift0aB0C10disconnect0D13EventListeneryAA0abeF0C_tFZ",
+            "moduleName": "GoEasySwift",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift0aB0C",
+        "mangledName": "$s11GoEasySwift0aB0C",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GResult",
+        "printedName": "GResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift7GResultC4codeSivp",
+            "mangledName": "$s11GoEasySwift7GResultC4codeSivp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4codeSivg",
+                "mangledName": "$s11GoEasySwift7GResultC4codeSivg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4codeSivs",
+                "mangledName": "$s11GoEasySwift7GResultC4codeSivs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4codeSivM",
+                "mangledName": "$s11GoEasySwift7GResultC4codeSivM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift7GResultC4dataypvp",
+            "mangledName": "$s11GoEasySwift7GResultC4dataypvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4dataypvg",
+                "mangledName": "$s11GoEasySwift7GResultC4dataypvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4dataypvs",
+                "mangledName": "$s11GoEasySwift7GResultC4dataypvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift7GResultC4dataypvM",
+                "mangledName": "$s11GoEasySwift7GResultC4dataypvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift7GResultC",
+        "mangledName": "$s11GoEasySwift7GResultC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GoEasySwift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConnectEventListener",
+        "printedName": "ConnectEventListener",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "onProgress",
+            "printedName": "onProgress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int32) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvp",
+            "mangledName": "$s11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvp",
+            "moduleName": "GoEasySwift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int32) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int32) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvg",
+                "mangledName": "$s11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvg",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Int32) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int32) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvs",
+                "mangledName": "$s11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvs",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvM",
+                "mangledName": "$s11GoEasySwift20ConnectEventListenerC10onProgressys5Int32VcSgvM",
+                "moduleName": "GoEasySwift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectEventListener",
+                "printedName": "GoEasySwift.ConnectEventListener",
+                "usr": "s:11GoEasySwift20ConnectEventListenerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11GoEasySwift20ConnectEventListenerCACycfc",
+            "mangledName": "$s11GoEasySwift20ConnectEventListenerCACycfc",
+            "moduleName": "GoEasySwift",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11GoEasySwift20ConnectEventListenerC",
+        "mangledName": "$s11GoEasySwift20ConnectEventListenerC",
+        "moduleName": "GoEasySwift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:11GoEasySwift0aB13EventListenerC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GoEasySwift.GoEasyEventListener"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/xhy\/Documents\/goeasy\/sdk\/kmm\/client-sdk-java\/KMM\/goeasy_ios_sdk\/goeasy_ios_sdk\/GPubSub.swift",
+      "kind": "StringLiteral",
+      "offset": 1162,
+      "length": 27,
+      "value": "\"GoEasySwift.SwiftSubscribeEventListener\""
+    },
+    {
+      "filePath": "\/Users\/xhy\/Documents\/goeasy\/sdk\/kmm\/client-sdk-java\/KMM\/goeasy_ios_sdk\/goeasy_ios_sdk\/GoEasy.swift",
+      "kind": "StringLiteral",
+      "offset": 1219,
+      "length": 26,
+      "value": "\"GoEasySwift.GoEasyConnectEventListener\""
+    },
+    {
+      "filePath": "\/Users\/xhy\/Documents\/goeasy\/sdk\/kmm\/client-sdk-java\/KMM\/goeasy_ios_sdk\/goeasy_ios_sdk\/GoEasy.swift",
+      "kind": "StringLiteral",
+      "offset": 1904,
+      "length": 24,
+      "value": "\"GoEasySwift.SwiftGoEasyEventListener\""
+    }
+  ]
+}
