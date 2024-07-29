@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "GoEasySwift"
-  spec.version = "0.1.15"
+  spec.version = "0.2.0"
   spec.summary      = "GoEasy SDK for swift"
   spec.description  = "GoEasy SDK for swift"
   spec.homepage     = "https://github.com/goeasy-io/goeasy-swift.git"

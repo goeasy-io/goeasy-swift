@@ -10,28 +10,27 @@ import _Concurrency
   public var content: Swift.String
   @objc deinit
 }
-public class GoEasyEventListener {
-  public init()
-  public var onSuccess: ((GoEasySwift.GResult) -> Swift.Void)?
-  public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+public class SubscribePresenceOptions {
+  public var channel: Swift.String
+  public var membersLimit: Swift.Int?
+  public var onPresence: (GoEasySwift.PresenceEvent) -> Swift.Void
+  public var onSuccess: () -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, membersLimit: Swift.Int? = nil, onPresence: @escaping (GoEasySwift.PresenceEvent) -> Swift.Void, onSuccess: @escaping () -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
   @objc deinit
 }
-@_inheritsConvenienceInitializers public class SubscribeEventListener : GoEasySwift.GoEasyEventListener {
-  public var onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)?
-  override public init()
+public class Member {
+  public var id: Swift.String
+  public var data: [Swift.String : Any]
+  public init(id: Swift.String, data: [Swift.String : Any])
   @objc deinit
 }
-public class ConnectOptions {
-  public var id: Swift.String?
-  public var data: [Swift.String : Swift.String]?
-  public var otp: Swift.String?
-  public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class GPubSub {
-  public static func publish(options: GoEasySwift.PublishOptions, publishEventListener: GoEasySwift.GoEasyEventListener)
-  public static func subscribe(channel: Swift.String, subscribeEventListener: GoEasySwift.SubscribeEventListener)
-  public static func unsubscribe(channel: Swift.String, unsubscribeEventListener: GoEasySwift.GoEasyEventListener)
+public class PresenceEvent {
+  public var action: Swift.String
+  public var member: GoEasySwift.Member
+  public var amount: Swift.Int32
+  public var members: [GoEasySwift.Member]
+  public init(action: Swift.String, member: GoEasySwift.Member, amount: Swift.Int32, members: [GoEasySwift.Member])
   @objc deinit
 }
 public class PublishOptions {
@@ -42,6 +41,44 @@ public class PublishOptions {
   public init(channel: Swift.String, message: Swift.String)
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class GPubSub {
+  public static func publish(options: GoEasySwift.PublishOptions, publishEventListener: GoEasySwift.GoEasyEventListener)
+  public static func subscribe(channel: Swift.String, subscribeEventListener: GoEasySwift.SubscribeEventListener)
+  public static func unsubscribe(channel: Swift.String, unsubscribeEventListener: GoEasySwift.GoEasyEventListener)
+  public static func subscribe(options: GoEasySwift.SubscribeOptions)
+  public static func unsubscribe(options: GoEasySwift.UnSubscribeOptions)
+  public static func subscribePresence(options: GoEasySwift.SubscribePresenceOptions)
+  public static func unsubscribePresence(options: GoEasySwift.UnSubscribePresenceOptions)
+  public static func hereNow(options: GoEasySwift.HereNowOptions)
+  public static func history(options: GoEasySwift.HistoryOptions)
+  @objc deinit
+}
+public class UnSubscribeOptions {
+  public var channel: Swift.String
+  public var onSuccess: () -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, onSuccess: @escaping () -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
+  @objc deinit
+}
+public class ConnectOptions {
+  public var id: Swift.String?
+  public var data: [Swift.String : Swift.String]?
+  public var otp: Swift.String?
+  public init()
+  public init(id: Swift.String, data: [Swift.String : Swift.String]?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class SubscribeEventListener : GoEasySwift.GoEasyEventListener {
+  public var onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)?
+  override public init()
+  @objc deinit
+}
+public class GoEasyEventListener {
+  public init()
+  public var onSuccess: ((GoEasySwift.GResult) -> Swift.Void)?
+  public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class GoEasy {
   public static func initGoEasy(host: Swift.String, appkey: Swift.String)
   public static func connect(connectEventListener: GoEasySwift.ConnectEventListener)
@@ -49,13 +86,82 @@ public class PublishOptions {
   public static func disconnect(disconnectEventListener: GoEasySwift.GoEasyEventListener)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class GResult {
-  public var code: Swift.Int
-  public var data: Any
+public class HereNowOptions {
+  public var channel: Swift.String
+  public var limit: Swift.Int?
+  public var onSuccess: (GoEasySwift.HereNowResponse) -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, limit: Swift.Int? = nil, onSuccess: @escaping (GoEasySwift.HereNowResponse) -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
+  @objc deinit
+}
+public class HereNowResponse {
+  public var code: Swift.Int32
+  public var content: GoEasySwift.PresenceContent
+  public init(code: Swift.Int32, content: GoEasySwift.PresenceContent)
+  @objc deinit
+}
+public class PresenceContent {
+  public var members: [GoEasySwift.Member]
+  public var amount: Swift.Int32
+  public var channel: Swift.String
+  public init(members: [GoEasySwift.Member], amount: Swift.Int32, channel: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers public class ConnectEventListener : GoEasySwift.GoEasyEventListener {
   public var onProgress: ((Swift.Int32) -> Swift.Void)?
   override public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GResult {
+  public var code: Swift.Int
+  public var data: Any
+  @objc deinit
+}
+public protocol CallBackOptions {
+  var onSuccess: () -> Swift.Void { get }
+  var onFailed: (GoEasySwift.GResult) -> Swift.Void { get }
+}
+public class UnSubscribePresenceOptions : GoEasySwift.CallBackOptions {
+  public var channel: Swift.String
+  public var onSuccess: () -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, onSuccess: @escaping () -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
+  @objc deinit
+}
+public class SubscribeOptions {
+  public var channel: Swift.String
+  public var channels: [Swift.String]?
+  public var presence: [Swift.String : Any]?
+  public var onMessage: (GoEasySwift.PubSubMessage) -> Swift.Void
+  public var onSuccess: () -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, channels: [Swift.String]? = nil, presence: [Swift.String : Any]? = nil, onMessage: @escaping (GoEasySwift.PubSubMessage) -> Swift.Void, onSuccess: @escaping () -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
+  @objc deinit
+}
+public class HistoryOptions {
+  public var channel: Swift.String
+  public var start: Swift.Int64?
+  public var end: Swift.Int64?
+  public var limit: Swift.Int?
+  public var onSuccess: (GoEasySwift.HistoryResponse) -> Swift.Void
+  public var onFailed: (GoEasySwift.GResult) -> Swift.Void
+  public init(channel: Swift.String, start: Swift.Int64? = nil, end: Swift.Int64? = nil, limit: Swift.Int? = 10, onSuccess: @escaping (GoEasySwift.HistoryResponse) -> Swift.Void, onFailed: @escaping (GoEasySwift.GResult) -> Swift.Void)
+  @objc deinit
+}
+public class HistoryMessage {
+  public var time: Swift.Int64
+  public var content: Swift.String
+  public init(time: Swift.Int64, content: Swift.String)
+  @objc deinit
+}
+public class HistoryContent {
+  public var messages: [GoEasySwift.HistoryMessage]
+  public init(messages: [GoEasySwift.HistoryMessage])
+  @objc deinit
+}
+public class HistoryResponse {
+  public var code: Swift.Int32
+  public var content: GoEasySwift.HistoryContent
+  public init(code: Swift.Int32, content: GoEasySwift.HistoryContent)
   @objc deinit
 }
