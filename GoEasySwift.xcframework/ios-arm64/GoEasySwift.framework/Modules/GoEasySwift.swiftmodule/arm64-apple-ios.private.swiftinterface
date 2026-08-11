@@ -1,0 +1,267 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GoEasySwift
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @objcMembers public class BadgeOptions : ObjectiveC.NSObject {
+  @objc public var badge: Swift.Int
+  @objc public var onSuccess: (() -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc public init(badge: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(badge: Swift.Int, onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class CallBackOptions : ObjectiveC.NSObject {
+  @objc public var onSuccess: (() -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class ConnectEventListener : GoEasySwift.GoEasyEventListener {
+  @objc public var onProgress: ((Swift.Int32) -> Swift.Void)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class ConnectOptions : ObjectiveC.NSObject {
+  @objc public var id: Swift.String?
+  @objc public var data: [Swift.String : Swift.String]?
+  @objc public var otp: Swift.String?
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(id: Swift.String?, data: [Swift.String : Swift.String]?)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GPubSub : ObjectiveC.NSObject {
+  @objc public static func publish(options: GoEasySwift.PublishOptions, publishEventListener: GoEasySwift.GoEasyEventListener)
+  @objc public static func subscribe(channel: Swift.String, subscribeEventListener: GoEasySwift.SubscribeEventListener)
+  @objc public static func subscribe(options: GoEasySwift.SubscribeOptions, subscribeEventListener: GoEasySwift.SubscribeEventListener)
+  @objc public static func unsubscribe(channel: Swift.String, unsubscribeEventListener: GoEasySwift.GoEasyEventListener)
+  @objc public static func unsubscribe(options: GoEasySwift.UnSubscribeOptions)
+  @objc public static func subscribePresence(options: GoEasySwift.SubscribePresenceOptions)
+  @objc public static func unsubscribePresence(options: GoEasySwift.UnSubscribePresenceOptions)
+  @objc public static func hereNow(options: GoEasySwift.HereNowOptions)
+  @objc public static func history(options: GoEasySwift.HistoryOptions)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class GResult : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int
+  @objc public var data: Any
+  @objc public init(code: Swift.Int, data: Any)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class GoEasy : ObjectiveC.NSObject {
+  @objc public static func initGoEasy(host: Swift.String, appkey: Swift.String)
+  @objc public static func connect(connectEventListener: GoEasySwift.ConnectEventListener)
+  @objc public static func connect(options: GoEasySwift.ConnectOptions, connectEventListener: GoEasySwift.ConnectEventListener)
+  @objc public static func disconnect(disconnectEventListener: GoEasySwift.GoEasyEventListener)
+  @objc public static func registerNotification()
+  @objc public static func registerDeviceToken(_ deviceToken: Foundation.Data)
+  @objc public static func setBadge(options: GoEasySwift.BadgeOptions)
+  @objc public static func onClickNotification(callBack: @escaping (any GoEasySwift.Message) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GoEasyEventListener : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public var onSuccess: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  @objc deinit
+}
+@objc @objcMembers public class HereNowOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  public var limit: Swift.Int?
+  @objc public var onSuccess: ((GoEasySwift.HereNowResponse) -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(channel: Swift.String, limit: Swift.Int? = nil, onSuccess: ((GoEasySwift.HereNowResponse) -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class HereNowResponse : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int32
+  @objc public var content: GoEasySwift.PresenceContent
+  @objc public init(code: Swift.Int32, content: GoEasySwift.PresenceContent)
+  @objc deinit
+}
+@objc @objcMembers public class HistoryOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  @objc public var start: Swift.Int64
+  @objc public var end: Swift.Int64
+  public var limit: Swift.Int?
+  @objc public var onSuccess: ((GoEasySwift.HistoryResponse) -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(channel: Swift.String, start: Swift.Int64 = 0, end: Swift.Int64 = 0, limit: Swift.Int? = nil, onSuccess: ((GoEasySwift.HistoryResponse) -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class HistoryMessage : ObjectiveC.NSObject {
+  @objc public var time: Swift.Int64
+  @objc public var content: Swift.String
+  @objc public init(time: Swift.Int64, content: Swift.String)
+  @objc deinit
+}
+@objc @objcMembers public class HistoryContent : ObjectiveC.NSObject {
+  @objc public var messages: [GoEasySwift.HistoryMessage]
+  @objc public init(messages: [GoEasySwift.HistoryMessage])
+  @objc deinit
+}
+@objc @objcMembers public class HistoryResponse : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int32
+  @objc public var content: GoEasySwift.HistoryContent
+  @objc public init(code: Swift.Int32, content: GoEasySwift.HistoryContent)
+  @objc deinit
+}
+@objc @objcMembers public class Member : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var data: [Swift.String : Any]
+  @objc public init(id: Swift.String, data: [Swift.String : Any] = [:])
+  @objc deinit
+}
+@objc @objcMembers public class PresenceContent : ObjectiveC.NSObject {
+  @objc public var members: [GoEasySwift.Member]
+  @objc public var amount: Swift.Int32
+  @objc public var channel: Swift.String
+  @objc public init(members: [GoEasySwift.Member], amount: Swift.Int32, channel: Swift.String)
+  @objc deinit
+}
+@objc public protocol Message : ObjectiveC.NSObjectProtocol {
+}
+@objc @objcMembers public class PubSubMessage : ObjectiveC.NSObject, GoEasySwift.Message {
+  @objc public var time: Swift.Int64
+  @objc public var channel: Swift.String
+  @objc public var content: Swift.String
+  @objc public init(time: Swift.Int64, channel: Swift.String, content: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VendorOptions : ObjectiveC.NSObject {
+  @objc public var huawei: GoEasySwift.HuaweiOptions?
+  @objc public var xiaomi: GoEasySwift.XiaomiOptions?
+  @objc public var oppo: GoEasySwift.OppoOptions?
+  @objc public var vivo: GoEasySwift.VivoOptions?
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(huawei: GoEasySwift.HuaweiOptions? = nil, xiaomi: GoEasySwift.XiaomiOptions? = nil, oppo: GoEasySwift.OppoOptions? = nil, vivo: GoEasySwift.VivoOptions? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class HuaweiOptions : ObjectiveC.NSObject {
+  @objc public var category: Swift.String
+  @objc public init(category: Swift.String)
+  @objc deinit
+}
+@objc @objcMembers public class XiaomiOptions : ObjectiveC.NSObject {
+  @objc public var channelId: Any
+  @objc public init(channelId: Any)
+  @objc deinit
+}
+@objc @objcMembers public class OppoOptions : ObjectiveC.NSObject {
+  @objc public var channelId: Swift.String
+  @objc public init(channelId: Swift.String)
+  @objc deinit
+}
+@objc @objcMembers public class VivoOptions : ObjectiveC.NSObject {
+  @objc public var classification: Swift.Int
+  @objc public var category: Swift.String
+  @objc public init(classification: Swift.Int, category: Swift.String)
+  @objc deinit
+}
+@objc @objcMembers public class PublishNotificationOptions : ObjectiveC.NSObject {
+  @objc public var title: Swift.String
+  @objc public var body: Swift.String
+  @objc public var sound: Swift.String?
+  @objc public var badge: Swift.String?
+  @objc public var vendorOptions: GoEasySwift.VendorOptions?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(title: Swift.String, body: Swift.String, sound: Swift.String? = nil, badge: Swift.String? = nil, vendorOptions: GoEasySwift.VendorOptions? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(title: Swift.String, body: Swift.String, sound: Swift.String? = nil, badge: Swift.String? = nil)
+  #endif
+  @objc public init(title: Swift.String, body: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(title: Swift.String, body: Swift.String, sound: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(title: Swift.String, body: Swift.String, badge: Swift.String? = nil)
+  #endif
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc @objcMembers public class PublishOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  @objc public var message: Swift.String
+  @objc public var qos: Foundation.NSNumber?
+  @objc public var notification: GoEasySwift.PublishNotificationOptions?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(channel: Swift.String, message: Swift.String, qos: Foundation.NSNumber? = nil, notification: GoEasySwift.PublishNotificationOptions? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(channel: Swift.String, message: Swift.String, notification: GoEasySwift.PublishNotificationOptions? = nil)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class SubscribeEventListener : GoEasySwift.GoEasyEventListener {
+  @objc public var onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class SubscribeOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  @objc public var channels: [Swift.String]?
+  @objc public var presence: [Swift.String : Any]?
+  @objc public var onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)?
+  @objc public var onSuccess: (() -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(channel: Swift.String, channels: [Swift.String]? = nil, presence: [Swift.String : Any]? = nil, onMessage: ((GoEasySwift.PubSubMessage) -> Swift.Void)? = nil, onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class SubscribePresenceOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  public var membersLimit: Swift.Int?
+  @objc public var onPresence: ((GoEasySwift.PresenceEvent) -> Swift.Void)?
+  @objc public var onSuccess: (() -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(channel: Swift.String, membersLimit: Swift.Int? = nil, onPresence: ((GoEasySwift.PresenceEvent) -> Swift.Void)? = nil, onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class PresenceEvent : ObjectiveC.NSObject {
+  @objc public var action: Swift.String
+  @objc public var member: GoEasySwift.Member
+  @objc public var amount: Swift.Int32
+  @objc public var members: [GoEasySwift.Member]
+  @objc public init(action: Swift.String, member: GoEasySwift.Member, amount: Swift.Int32, members: [GoEasySwift.Member])
+  @objc deinit
+}
+@objc @objcMembers public class UnSubscribeOptions : ObjectiveC.NSObject {
+  @objc public var channel: Swift.String
+  @objc public var onSuccess: (() -> Swift.Void)?
+  @objc public var onFailed: ((GoEasySwift.GResult) -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(channel: Swift.String, onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class UnSubscribePresenceOptions : GoEasySwift.CallBackOptions {
+  @objc public var channel: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(channel: Swift.String, onSuccess: (() -> Swift.Void)? = nil, onFailed: ((GoEasySwift.GResult) -> Swift.Void)? = nil)
+  #endif
+  @objc deinit
+}

@@ -1,0 +1,4 @@
+framework module GoEasySwift {
+  header "GoEasySwift-Swift.h"
+  requires objc
+}
